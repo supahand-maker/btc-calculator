@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTC 계산기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>BTC 계산기</h1>
+
+    <div class="exchange-rate">
+      <p>BTC (업비트) → KRW: <span id="upbitBtcKrwRate">로딩 중...</span></p>
+      <p>BTC → USD: <span id="btcUsdRate">로딩 중...</span></p>
+      <p>USD → KRW: <span id="usdKrwRate">로딩 중...</span></p>
+
+      <p>USDT (업비트): <span id="upbitUsdtKrwRate">로딩 중...</span></p>
+
+      <p>김프: <span id="kimpRate">로딩 중...</span></p>
+
+      <button id="refreshBtn" type="button">환율 새로고침</button>
+    </div>
+
+    <section class="grid">
+      <label class="row">
+        <span>BTC</span>
+        <input id="btcInput" inputmode="decimal" placeholder="0" />
+      </label>
+
+      <label class="row">
+        <span>SATS</span>
+        <input id="satsInput" inputmode="numeric" placeholder="0" />
+      </label>
+
+      <label class="row">
+        <span>USD</span>
+        <input id="usdInput" inputmode="decimal" placeholder="0" />
+      </label>
+
+      <label class="row">
+        <span>KRW</span>
+        <input id="krwInput" inputmode="numeric" placeholder="0" />
+      </label>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
